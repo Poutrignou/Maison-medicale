@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 125vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(255, 235, 205, 0.2);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    opacity: 0.7;
+}
+
+a {
+    padding: 25px;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.banniere {
+    border-bottom: 3px solid grey;
+    margin-bottom: 1%;
+}
+
+.container__logo {
+    height: 3vh;
+}
+
+#img__caducee {
+    height: 49px;
+    position: relative;
+    bottom: 10px;
+}
+
+.banniere {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./image/exemple-maison.jpg);
+    background-size: cover;
+    flex-direction: column;
+}
+
+.banniere-kine {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./image/massage-1.jpg);
+    background-size: cover;
+    flex-direction: column;
+}
+
+#carte {
+    visibility: hidden;
+}
+
+#carte.active {
+    visibility: visible;
+}
+
+.text-presentation {
+    visibility: hidden;
+}
+
+.text-presentation.active {
+    visibility: visible;
+    color: #fff;
+}
+
+button#button-carte {
+    font-weight: bold;
+}
+
+#button-carte {
+    font-weight: bold;
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button.button-presentation {
+    font-weight: bold;
+}
+
+.button-presentation {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    border-width: 0;
+    color: #020202;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
